@@ -4,7 +4,7 @@ ARG TINI_VERSION=v0.18.0
 ARG BUILD_DATE
 ARG VCS_REF
 
-LABEL maintainer="Simon Erhardt <hello@rootlogin.ch>" \
+LABEL maintainer="Frank ren <frank.ren@aliyun.com>" \
   org.label-schema.name="Web Desktop" \
   org.label-schema.description="Dockerized web desktop based on Xubuntu 18.04." \
   org.label-schema.build-date=$BUILD_DATE \
@@ -59,23 +59,6 @@ RUN set -ex \
   desktop-file-utils \
   engrampa \
   firefox \
-  fonts-dejavu-core \
-  fonts-freefont-ttf \
-  fonts-indic \
-  fonts-kacst-one \
-  fonts-khmeros-core \
-  fonts-lao \
-  fonts-liberation \
-  fonts-lklug-sinhala \
-  fonts-noto-cjk \
-  fonts-noto-hinted \
-  fonts-opensymbol \
-  fonts-sil-abyssinica \
-  fonts-sil-padauk \
-  fonts-symbola \
-  fonts-thai-tlwg \
-  fonts-tibetan-machine \
-  fonts-ubuntu \
   gigolo \
   git \
   gnome-font-viewer \
@@ -90,10 +73,6 @@ RUN set -ex \
   libnotify-bin \
   libnss-mdns \
   libpam-gnome-keyring \
-  libreoffice-calc \
-  libreoffice-gnome \
-  libreoffice-style-elementary \
-  libreoffice-writer \
   libxfce4ui-utils \
   mate-calc \
   menulibre \
@@ -129,7 +108,6 @@ RUN set -ex \
   thunar-archive-plugin \
   thunar-media-tags-plugin \
   thunar-volman \
-  thunderbird \
   tigervnc-standalone-server \
   transmission-gtk \
   unzip \
@@ -155,6 +133,8 @@ RUN set -ex \
   xubuntu-wallpapers \
   xul-ext-ubufox \
   zip \
+  vim \
+  default-jdk \
   && apt-get clean
 
 # Install noVNC
