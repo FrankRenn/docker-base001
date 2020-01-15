@@ -154,8 +154,7 @@ RUN set -ex \
 RUN set -ex \
   && chmod +x /usr/local/bin/tini
   
-RUN cd /root \
-  && ./install-vscode.sh 
+
 
 COPY root /
 
