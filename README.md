@@ -18,16 +18,16 @@ This image provides a dockerized web desktop based on Xubuntu 18.04 LTS (Xfce4).
 
 To run this desktop enter:
 ```
-docker run -p 80:8083 rootlogin/web-desktop
+docker run -p 8088:8083 frankren/base001
 ```
 
-Then surf to [localhost](http://localhost) and have fun.
+Then surf to [localhost](http://localhost:8088) and have fun.
 
 ### Persistent user data
 
 To persist user data you have to mount the volume /home/user:
 ```
-docker run -p 80:8083 -v user_data:/home/user rootlogin/web-desktop
+docker run -p 80:8083 -v user_data:/home/user frankren/base001
 ```
 
 ## Customizing
